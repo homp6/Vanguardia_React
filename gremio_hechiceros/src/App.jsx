@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import './Components/components.jsx'
+import Componente from '../src/Components/components.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,9 +30,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Components nombre="Hector" />
+      <Componente name="Hector" count={18} setCount={setCount}/>
+        
     </>
   )
 }
 
-export default App
+export default App;

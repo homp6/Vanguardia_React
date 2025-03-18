@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {React} from 'react';
 
-function component(nombre){
+const Componente = ({name, setCount}) =>{
     return (
-        <button>
-            Boton, {nombre}
-        </button>
-    )
-}
+        <>
+        <div onClick={setCount(18)}>
+            <p>{name}</p>
+        </div>
+        </>
+    );
+};
 
-export default component;
+export default Componente;
